@@ -1,0 +1,3 @@
+[submodule "refs/ceu-uch-uva"]
+	path = refs/ceu-uch-uva
+	url = git@bitbucket.org:pakozm/acm-problems.git
