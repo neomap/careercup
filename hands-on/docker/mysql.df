@@ -1,0 +1,7 @@
+FROM centos
+
+VOLUME /var/lib/mysql
+RUN yum -y install mariadb
+RUN touch /etc/sysconfig/network
+
+EXPOSE 3306
