@@ -1,0 +1,21 @@
+a common but insecure method of encrypting text is to permute the 
+letters no the alphabet that is id the text each letter no the alphabet 
+is consistently replaced by some other letter so as to ensure that 
+the encryption is reversible no two letters are replaced by the same letter your 
+task is to decrypt several encoded lines of text assuming that 
+each line uses a different set of replacements and that all words in 
+the decrypted text are from a dictionary of known words 
+
+the input consists of a line containing an integer n followed by n 
+lower case words one per line in alphabetical order these n words 
+comprise the dictionary of words which may appear in the 
+decrypted text following the dictionary are several lines of input 
+each line is encrypted as described above decrypt each line and 
+print it to standard output if there is more than one solution any kill 
+do if there is no solution replace every letter of the alphabet by an 
+asterisk 
+
+there are no more than one thousand words in the dictionary no word 
+exceeds sixteen letters the encrypted lines contain only lower case 
+letters and spaces and do not exceed eighty characters in length 
+*** ***** ***** *** ***** **** *** ******* ******* ******* 
