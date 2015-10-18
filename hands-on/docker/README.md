@@ -24,11 +24,7 @@ docker run -d -P --name web nginx
 ```
 
 ### How to ssh to docker machine?
-First, deploy a new docker machine providing desired opotions, like the following:
-```
-
-```
-Then you can ssh to that VM after starting it.
+Use _docker-image_ sub-command such as `docker-image ssh default` after you start it.
 Check out detail guide [here][1]
 
 ##Tips

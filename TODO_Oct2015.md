@@ -2,7 +2,7 @@
 - [ ] Refine my English resume
 - [ ] Add more project experience 
 - [ ] Read and review Chapter I to VII of _Cracking the coding interview_
-- [ ] Review _Essential C++_
+- [ ] Review _Essential C++_ and do some hands-on coding
 - [ ] Study Part I (The Python Language) of _Python Essential Reference_
 - [ ] Study Chapter I and II of _Introduction to Alorithm (3rd ed.)_
 
