@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+*.a
+
+# Symbol files
+*.dSYM
