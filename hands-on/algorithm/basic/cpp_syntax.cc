@@ -6,3 +6,5 @@ void foo()
     typedef typename T::iter TI;
     std::vector<int>::iterator it2;
 }
+
+int main() {}
