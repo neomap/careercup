@@ -1,0 +1,58 @@
+#include <string>
+#include <vector>
+#include <algorithms>
+using namespace std;
+class Solution {
+public:
+    bool isAdditiveNumber(string num) {
+        int n = num.size();
+        vector<vector<pair<string,string>>> dp(n+1);
+        vector<bool> sumed(n+1, false);
+        if (n <3 ) return false;
+        // special case for all 0
+        if (num == string(n,'0')) return true;
+        dp[2].push_back({num[1], add(num[0] + num[1]});
+        for (int i=3; i<=n; ++i) {
+            if (num[1] != '0' && i<=n/3) {
+               dp[i].push_back({num.substr(1, i-1), add(num[0], num.substr(1, i-1))}); 
+            }
+            for (int j=2; j<i; ++j) {
+                if (num[j] != '0' && 2*(j+1)>=i) {
+                    string val = num.substr(j, i-j);
+                    // !!! dp[j] is the left part ending position
+                    for (auto p:dp[j]) {
+                        if (p.second ==val) {
+                            dp[i].push_back({val, add(val, p.first)});
+                            sumed[i] = true;
+                        }
+                    }
+                    if (j <=n/3) dp[i].push_back({val, add(num.substr(0,j), val)});
+                }
+            }
+        }
+        return sumed[n];
+    }
+    
+    string add(string& a, string& b) {
+        bool co = false;
+        string val;
+        auto it1 = a.rbegin(), it2 = b.rbegin();
+        while (it1 != a.rend() || it2 != r.rend()) {
+            int v = co?1:0;
+            if (it1 != a.rend()) {
+                v+=*it1++ -'0';
+            }
+            if (it2 !=b.rend()) {
+                v+=*it2++ - '0'
+            }
+            if (v >=10) {
+                co = true;
+                v-=10;
+            }
+            val.push_back(v+'0');
+        }
+        if (co) val.push_back('1');
+        reverse(val.begin(), val.end());
+        return val;
+    }
+};
