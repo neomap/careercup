@@ -1,0 +1,23 @@
+Logfile: Sun Mar  6 08:19:31 CST 2016
+-------------------------------------
+
+Output of "ls -al" command
+
+total 24
+drwxr-xr-x   6 andyz  staff  204 Mar  6 08:17 .
+drwxr-xr-x  19 andyz  staff  646 Feb 28 20:19 ..
+-rw-r--r--   1 andyz  staff  202 Feb 28 20:19 README.md
+-rw-r--r--   1 andyz  staff  105 Mar  6 08:19 logfile.txt
+-rw-r--r--   1 andyz  staff  787 Mar  6 08:19 redirect.sh
+drwxr-xr-x   3 andyz  staff  102 Feb 28 20:19 refs
+
+
+Output of "df" command
+
+Filesystem                        512-blocks      Used Available Capacity  iused    ifree %iused  Mounted on
+/dev/disk1                         195312384 173906536  20893848    90% 21802315  2611731   89%   /
+devfs                                    372       372         0   100%      644        0  100%   /dev
+/dev/disk0s4                       292308112  59982168 232325944    21%  7497769 29040743   21%   /Volumes/VMDisk
+map -hosts                                 0         0         0   100%        0        0  100%   /net
+map auto_home                              0         0         0   100%        0        0  100%   /home
+localhost:/3OKPv2061dvrp0APkjbD9x  195312384 195312384         0   100%        0        0  100%   /Volumes/MobileBackups
