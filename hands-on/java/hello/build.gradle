@@ -1,0 +1,17 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+}
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.slf4j:slf4j-nop:1.7.12'
+}
+
+apply plugin: "com.github.johnrengelman.shadow"
+shadowJar {
+    version = '1.0.0'
+}
